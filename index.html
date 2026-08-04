@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -23,7 +22,7 @@
     <!-- Tailwind CSS Engine -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Custom Tailwind Configuration (The "Apple Dark" Theme) -->
+    <!-- Custom Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -56,9 +55,6 @@
                         }
                     },
                     backgroundSize: {
-                        'auto': 'auto',
-                        'cover': 'cover',
-                        'contain': 'contain',
                         '200%': '200% auto',
                     }
                 }
@@ -99,7 +95,7 @@
 </head>
 <body class="antialiased selection:bg-accentgreen selection:text-black">
 
-    <!-- Sticky Navigation (Glassmorphism) -->
+    <!-- Sticky Navigation -->
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300" aria-label="Main Navigation">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="font-bold text-xl tracking-tighter flex items-center gap-2 hover:opacity-80 transition">
@@ -111,7 +107,8 @@
                 <a href="#features" class="hover:text-white transition duration-200">Features</a>
                 <a href="#bundle" class="hover:text-white transition duration-200">What's Included</a>
             </div>
-            <a href="YOUR_WHOP_OR_GUMROAD_LINK_HERE" class="px-5 py-2.5 text-sm font-bold bg-white text-black rounded-full hover:scale-105 active:scale-95 hover:bg-gray-100 transition duration-300 ease-out shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+            <!-- BUTTON 1: Top Nav Checkout Link -->
+            <a href="YOUR_WHOP_LINK_HERE" class="px-5 py-2.5 text-sm font-bold bg-white text-black rounded-full hover:scale-105 active:scale-95 hover:bg-gray-100 transition duration-300 ease-out shadow-[0_0_15px_rgba(255,255,255,0.2)]">
                 Get Access
             </a>
         </div>
@@ -119,10 +116,7 @@
 
     <!-- Hero Section -->
     <section class="relative pt-40 pb-20 px-6 max-w-7xl mx-auto flex flex-col items-center text-center min-h-screen">
-        <!-- Tech Grid Background -->
         <div class="absolute inset-0 bg-grid-pattern -z-20 pointer-events-none mt-20 h-[800px]"></div>
-        
-        <!-- Ambient background glow -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-accentblue/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
         
         <div data-aos="fade-down" data-aos-duration="1000" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accentblue/30 bg-accentblue/5 text-accentblue text-xs font-semibold tracking-widest uppercase mb-8 shadow-[0_0_20px_rgba(56,189,248,0.1)]">
@@ -140,7 +134,8 @@
         </p>
 
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="flex flex-col sm:flex-row gap-4 items-center">
-            <a href="YOUR_WHOP_OR_GUMROAD_LINK_HERE" class="px-8 py-4 text-lg font-bold bg-accentgreen text-black rounded-xl hover:bg-emerald-400 hover:-translate-y-1 active:translate-y-0 active:scale-95 hover:shadow-[0_15px_30px_-10px_rgba(16,185,129,0.5)] transition-all duration-300">
+            <!-- BUTTON 2: Hero Section Checkout Link -->
+            <a href="YOUR_WHOP_LINK_HERE" class="px-8 py-4 text-lg font-bold bg-accentgreen text-black rounded-xl hover:bg-emerald-400 hover:-translate-y-1 active:translate-y-0 active:scale-95 hover:shadow-[0_15px_30px_-10px_rgba(16,185,129,0.5)] transition-all duration-300">
                 Unlock Lifetime Access — $99
             </a>
         </div>
@@ -151,35 +146,25 @@
             <span>30-Day Money-Back Guarantee</span>
         </p>
 
-        <!-- CSS Minimalist Laptop Mockup -->
+        <!-- Laptop Mockup Container with your exact image path -->
         <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" class="mt-20 w-full max-w-5xl animate-float">
-            <!-- Screen Base -->
             <div class="relative mx-auto border-bordergray border-[8px] rounded-t-2xl bg-obsidian w-full aspect-video shadow-2xl overflow-hidden group">
-                
-                <!-- TOP BAR UI -->
-                <div class="w-full h-6 bg-applegray border-b border-bordergray flex items-center px-4 gap-2">
+                <div class="w-full h-6 bg-applegray border-b border-bordergray flex items-center px-4 gap-2 z-10 relative">
                     <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
                     <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
                     <div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
                 </div>
 
-                <!-- INSTRUCTION: To use your Canva Image, uncomment the image tag below and delete the placeholder div -->
-                <!-- <img src="dashboard-mockup.png 185101.png" alt="Enterprise OS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"> -->
-                
-                <!-- PLACEHOLDER (Delete when using real image) -->
-                <div class="absolute inset-0 flex flex-col items-center justify-center mt-6 bg-gradient-to-b from-appledark to-obsidian">
-                    <div class="text-accentblue/50 mb-4"><svg class="w-16 h-16" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>
-                    <p class="text-textmuted font-mono text-sm tracking-widest uppercase">Insert Canva Mockup Here</p>
-                </div>
+                <!-- CANVA IMAGE EMBED -->
+                <img src="dashboard-mockup.png%20185101.png" alt="Enterprise OS Dashboard" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             </div>
-            <!-- Laptop Bottom Lip -->
             <div class="relative mx-auto w-[105%] h-4 bg-bordergray rounded-b-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-gray-500/30 rounded-b-md"></div>
             </div>
         </div>
     </section>
 
-    <!-- The Financial ROI Matrix -->
+    <!-- Financial ROI Matrix -->
     <section id="roi" class="py-24 px-6 max-w-6xl mx-auto scroll-mt-20">
         <div class="text-center mb-16">
             <h2 data-aos="fade-up" class="text-3xl md:text-5xl font-bold tracking-tight mb-4">The Financial Math is Undeniable.</h2>
@@ -187,7 +172,6 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- Bad Card -->
             <div data-aos="fade-right" class="glass-card rounded-2xl p-8 border-red-500/20 relative group hover:border-red-500/40 transition-colors duration-300">
                 <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
                     <span aria-hidden="true" class="bg-red-500/10 text-red-500 p-2 rounded-lg">❌</span> Traditional SaaS Stack
@@ -204,11 +188,8 @@
                 </div>
             </div>
 
-            <!-- Good Card -->
             <div data-aos="fade-left" class="glass-card rounded-2xl p-8 border-accentgreen/40 relative overflow-hidden group hover:border-accentgreen hover:shadow-[0_0_30px_rgba(16,185,129,0.15)] transition-all duration-300">
-                <!-- Subtle background glow -->
                 <div class="absolute top-0 right-0 w-40 h-40 bg-accentgreen/10 blur-[50px] rounded-full group-hover:bg-accentgreen/20 transition-colors duration-500 pointer-events-none"></div>
-                
                 <div class="absolute top-0 right-0 bg-accentgreen text-black text-xs font-bold px-4 py-1.5 rounded-bl-lg shadow-lg">RECOMMENDED</div>
                 
                 <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
@@ -228,27 +209,24 @@
         </div>
     </section>
 
-    <!-- Deep Dive Features (Bento Grid Style) -->
+    <!-- Deep Dive Features -->
     <section id="features" class="py-24 px-6 bg-appledark border-t border-bordergray scroll-mt-10">
         <div class="max-w-6xl mx-auto">
             <h2 data-aos="fade-up" class="text-3xl md:text-5xl font-bold tracking-tight text-center mb-16">Engineered for Agency Scale.</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Feature 1 -->
                 <div data-aos="fade-up" data-aos-delay="100" class="glass-card p-8 rounded-2xl group hover:-translate-y-2 hover:border-blue-500/30 transition-all duration-300 cursor-default">
                     <div class="w-14 h-14 bg-blue-500/10 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300" aria-hidden="true">📊</div>
                     <h3 class="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors">CFO Cash Runway Engine</h3>
                     <p class="text-textmuted text-sm leading-relaxed group-hover:text-gray-300 transition-colors">Live financial HUD. Automatically calculates your survival months, burn rates, and direct labor overhead so you never guess your profitability.</p>
                 </div>
 
-                <!-- Feature 2 -->
                 <div data-aos="fade-up" data-aos-delay="200" class="glass-card p-8 rounded-2xl group hover:-translate-y-2 hover:border-accentgreen/30 transition-all duration-300 cursor-default">
                     <div class="w-14 h-14 bg-accentgreen/10 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300" aria-hidden="true">📄</div>
                     <h3 class="text-xl font-bold mb-3 group-hover:text-accentgreen transition-colors">1-Click PDF Invoicing</h3>
                     <p class="text-textmuted text-sm leading-relaxed group-hover:text-gray-300 transition-colors">Native Google Apps Script automatically generates legal PDF invoices and SOW addendums directly into your Google Drive in 3 seconds.</p>
                 </div>
 
-                <!-- Feature 3 -->
                 <div data-aos="fade-up" data-aos-delay="300" class="glass-card p-8 rounded-2xl group hover:-translate-y-2 hover:border-red-500/30 transition-all duration-300 cursor-default">
                     <div class="w-14 h-14 bg-red-500/10 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300" aria-hidden="true">🛡️</div>
                     <h3 class="text-xl font-bold mb-3 group-hover:text-red-400 transition-colors">Scope Creep Guard</h3>
@@ -258,10 +236,9 @@
         </div>
     </section>
 
-    <!-- The Full Bundle Stack -->
+    <!-- Bundle Included Section -->
     <section id="bundle" class="py-24 px-6 max-w-4xl mx-auto scroll-mt-20">
         <div class="glass-card border border-bordergray rounded-3xl p-8 md:p-14 relative overflow-hidden shadow-2xl">
-            <!-- Glow effect -->
             <div class="absolute -top-40 -right-40 w-[500px] h-[500px] bg-accentblue/10 blur-[120px] rounded-full z-0 pointer-events-none"></div>
             
             <div class="relative z-10">
@@ -304,18 +281,13 @@
         </div>
     </section>
 
-    <!-- Final CTA & Guarantee -->
+    <!-- Clean Close CTA & Guarantee -->
     <section class="py-24 px-6 text-center relative">
         <div class="absolute inset-0 bg-gradient-to-t from-applegray to-obsidian -z-10"></div>
         
         <div data-aos="zoom-in" class="max-w-3xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Take Back Control of Your Ops.</h2>
             <p class="text-textmuted text-lg md:text-xl mb-10 font-light">Join the top 1% of agency founders replacing their bloated tech stacks with absolute, mathematical simplicity.</p>
-            
-            <a href="YOUR_WHOP_OR_GUMROAD_LINK_HERE" class="inline-flex items-center justify-center gap-3 px-10 py-5 text-xl font-bold bg-white text-black rounded-xl hover:scale-105 active:scale-95 hover:bg-gray-100 hover:shadow-[0_0_50px_rgba(255,255,255,0.2)] transition-all duration-300 mb-10">
-                Get Instant Google Drive Access 
-                <svg class="w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-            </a>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-textmuted bg-appledark inline-flex px-6 py-4 rounded-2xl mx-auto border border-bordergray shadow-xl">
                 <span class="text-3xl" aria-hidden="true">🛡️</span>
@@ -336,9 +308,9 @@
             </div>
             
             <div class="flex gap-8 font-medium">
-                <a href="#" class="hover:text-white transition-colors duration-200">Setup Guide</a>
-                <a href="#" class="hover:text-white transition-colors duration-200">Terms & Privacy</a>
-                <a href="#" class="hover:text-white transition-colors duration-200">Support</a>
+                <a href="setup.html" class="hover:text-white transition-colors duration-200">Setup Guide</a>
+                <a href="terms.html" class="hover:text-white transition-colors duration-200">Terms & Privacy</a>
+                <a href="mailto:support@corelayersystems.com" class="hover:text-white transition-colors duration-200">Support</a>
             </div>
             
             <p>© 2026 CoreLayer Systems. All rights reserved.</p>
